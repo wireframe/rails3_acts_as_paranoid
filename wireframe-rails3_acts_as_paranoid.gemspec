@@ -1,8 +1,8 @@
 # coding: UTF-8
 
 Gem::Specification.new do |s|
-  s.name              = "rails3_acts_as_paranoid"
-  s.version           = "0.0.4"
+  s.name              = "wireframe-rails3_acts_as_paranoid"
+  s.version           = "0.0.4a"
   s.platform          = Gem::Platform::RUBY
   s.authors           = ["Gonçalo Silva"]
   s.email             = ["goncalossilva@gmail.com"]

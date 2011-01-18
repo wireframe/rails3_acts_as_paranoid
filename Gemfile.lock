@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails3_acts_as_paranoid (0.0.4)
+    wireframe-rails3_acts_as_paranoid (0.0.4a)
       activerecord (>= 3.0)
 
 GEM
@@ -29,7 +29,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord (>= 3.0)
   activesupport
-  rails3_acts_as_paranoid!
   rake
   sqlite3-ruby
+  wireframe-rails3_acts_as_paranoid!
