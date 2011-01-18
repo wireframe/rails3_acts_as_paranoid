@@ -126,3 +126,9 @@ class ParanoidHasOneDependant < ActiveRecord::Base
 
   belongs_to :paranoid_boolean
 end
+
+class Test::Unit::TestCase
+  def assert_empty(collection)
+    assert collection.empty?, "Expected #{collection.inspect} to be empty"
+  end
+end
