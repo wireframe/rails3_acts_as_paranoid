@@ -27,6 +27,7 @@ module ActsAsParanoid
 
     class_eval <<-EOV
       default_scope where("#{column_reference} IS ?", nil)
+      alias_method :destroy!, :destroy
 
       class << self
         def is_paranoid?
@@ -64,14 +65,6 @@ module ActsAsParanoid
 
       def paranoid_value
         self.send(self.class.paranoid_column)
-      end
-
-      def destroy!
-        before_destroy() if respond_to?(:before_destroy)
-
-        #{self.name}.delete_all!(:id => self)
-
-        after_destroy() if respond_to?(:after_destroy)
       end
 
       def destroy
